@@ -8,4 +8,9 @@ class ProductsController < ApplicationController
     products = Product.all
     render json: products.as_json
   end
+
+  def product_two
+    product_two = Product.second
+    render json: product_two.as_json
+  end
 end
