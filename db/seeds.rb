@@ -5,14 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-product = Product.new(name: "purse", price: 55, image_url: "placeholder", description: "cow print")
-product.save
-
-product = Product.new(name: "coat", price: 70, image_url: "placeholder2", description: "teal, knee length")
-product.save
-
-product = Product.new(name: "dress", price: 65, image_url: "placeholder3", description: "maroon 3/4 sleeve gown")
-product.save
-
-product = Product.new(name: "boots", price: 30, image_url: "placeholder4", description: "black combat boots")
-product.save
+Product.create({ name: "Blue Cow Print Purse", price: 55, image_url: "placeholder", description: "Cute Cow Print Purse" })
+Product.create({ name: "Teal Coat", price: 70, image_url: "placeholder", description: "Knee length, teal, winter coat" })
+Product.create({ name: "Maroon Evening Gown", price: 65, image_url: "placeholder", description: "Maroon, 3/4 sleeve gown" })
+Product.create({ name: "Combat Boots", price: 30, image_url: "placeholder", description: "Black leather combat boots" })
