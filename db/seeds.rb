@@ -10,3 +10,9 @@ product.save
 
 product = Product.new(name: "coat", price: 70, image_url: "placeholder2", description: "teal, knee length")
 product.save
+
+product = Product.create(name: "dress", price: 65, image_url: "placeholder3", description: "maroon 3/4 sleeve gown")
+product.save
+
+product = Product.create(name: "boots", price: 30, image_url: "placeholder4", description: "black combat boots")
+product.save
