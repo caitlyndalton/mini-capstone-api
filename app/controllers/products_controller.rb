@@ -13,4 +13,9 @@ class ProductsController < ApplicationController
     product_two = Product.second
     render json: product_two.as_json
   end
+
+  def product_random
+    products_random = Product.random
+    render json: product_random.as_json
+  end
 end

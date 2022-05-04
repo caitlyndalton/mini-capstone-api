@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/one_product", controller: "products", action: "one_product"
   get "/all_products", controller: "products", action: "all_products"
   get "/product_two", controller: "products", action: "product_two"
+  get "/product_random", controller: "products", action: "product_random"
 end
