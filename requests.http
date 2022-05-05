@@ -12,6 +12,14 @@ Content-Type: application/json
   "description": "the iconic matoshi strawberry dress"
 }
 
-
 ### Products show
-GET http://localhost:3000/products/1.json
+GET http://localhost:3000/products/5.json
+
+### Products update
+PATCH http://localhost:3000/products/5.json
+Content-Type: application/json
+
+{
+  "price": "550",
+  "description": "The famous Matoshi Strawberry Dress"
+}
