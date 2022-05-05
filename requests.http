@@ -3,6 +3,15 @@ GET http://localhost:3000/products.json
 
 ### Products create
 POST http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  "name": "Strawberry Dress",
+  "price": "440",
+  "image_url": "placeholder",
+  "description": "the iconic matoshi strawberry dress"
+}
+
 
 ### Products show
 GET http://localhost:3000/products/1.json
