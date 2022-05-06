@@ -13,10 +13,10 @@ Content-Type: application/json
 }
 
 ### Products show
-GET http://localhost:3000/products/5.json
+GET http://localhost:3000/products/7.json
 
 ### Products update
-PATCH http://localhost:3000/products/5.json
+PATCH http://localhost:3000/products/6.json
 Content-Type: application/json
 
 {
