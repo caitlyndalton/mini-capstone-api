@@ -8,7 +8,6 @@ Content-Type: application/json
 {
   "name": "Strawberry Dress",
   "price": "440",
-  "image_url": "placeholder",
   "description": "the iconic matoshi strawberry dress"
 }
 
