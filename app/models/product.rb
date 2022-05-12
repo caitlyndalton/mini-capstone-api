@@ -20,7 +20,7 @@ class Product < ApplicationRecord
     created_at.strftime("%B %e, %Y")
   end
 
-  def if_discounted?
+  def is_discounted?
     if price <= 10
       true
     else

@@ -7,7 +7,6 @@
   is_discounted?: @product.is_discounted?,
   description: @product.description,
   supplier: @product.supplier,
-  images: @products.images,
   friendly_created_at: @product.friendly_created_at,
   created_at: @product.created_at,
   updated_at: @product.updated_at
