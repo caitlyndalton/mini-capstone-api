@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
   end
 
   def index
-    orders = current_user.orders
+    @orders = Order.where(user_id: current_user.id)
     render template: "orders/index"
   end
 end

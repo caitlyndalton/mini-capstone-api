@@ -54,14 +54,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MTkxN
 
 {
   "product_id": "2",
-  "quantity": "3",
-  "subtotal": "40",
-  "tax": "4",
-  "total": "44"
+  "quantity": "3"
 }
 
 ### Order Show
-GET http://localhost:3000/orders/2.json 
+GET http://localhost:3000/orders/3.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MTkxNjR9.p9j9Ieanmky-ClMKa3xWjZAJXyfK5jESGy1M9ROpSw4
 
 ### Order Index
 GET http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MTkxNjR9.p9j9Ieanmky-ClMKa3xWjZAJXyfK5jESGy1M9ROpSw4
