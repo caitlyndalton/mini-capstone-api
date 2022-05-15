@@ -62,3 +62,6 @@ Content-Type: application/json
 
 ### Order Show
 GET http://localhost:3000/orders/2.json 
+
+### Order Index
+GET http://localhost:3000/orders.json
