@@ -4,11 +4,13 @@ GET http://localhost:3000/products.json
 ### Products create
 POST http://localhost:3000/products.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI4MzExMjl9.enBSFXuGRE9tRaNNOHi-cq2mVO-EY0uhU1cWnp6lHs0
 
 {
-  "name": "Strawberry Dress",
-  "price": "440",
-  "description": "the iconic matoshi strawberry dress"
+  "name": "Test name",
+  "price": "10",
+  "description": "test description",
+  "supplier_id": 1
 }
 
 ### Products show
@@ -25,7 +27,8 @@ Content-Type: application/json
 }
 
 ### Product destroy
-DELETE http://localhost:3000/products/6.json
+DELETE http://localhost:3000/products/5.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI4MzExMjl9.enBSFXuGRE9tRaNNOHi-cq2mVO-EY0uhU1cWnp6lHs0
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
@@ -63,4 +66,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MTkxN
 
 ### Order Index
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI3MTkxNjR9.p9j9Ieanmky-ClMKa3xWjZAJXyfK5jESGy1M9ROpSw4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI4MzExMjl9.enBSFXuGRE9tRaNNOHi-cq2mVO-EY0uhU1cWnp6lHs0
