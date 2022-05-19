@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTI5MTU3Mzl9.dSZbUSn4kVTBiuH6BxxCdRUgkuWeX0J2qFkz71urZ6Q
+@jwt = eeyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTMwMDgyODR9.Oh0B8kA1ZF4YcadE8pCyW8V5oNBKK1G4pvmQ379Reqc
 
 ### Products index
 GET http://localhost:3000/products.json
@@ -76,6 +76,7 @@ GET http://localhost:3000/carted_products.json
 ### CartedProduct Create
 POST http://localhost:3000/carted_products.json
 Content-Type: application/json
+Authorization: Bearer {{jwt}}
 
 {
   "user_id": "2",
@@ -84,3 +85,6 @@ Content-Type: application/json
   "status": "carted",
   "order_id": "4"
 }
+
+### CartedProduct Destroy
+DELETE http://localhost:3000/carted_products/1.json
