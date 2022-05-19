@@ -1,4 +1,9 @@
 class CartedProductsController < ApplicationController
+  def index
+    @carted_products = CartedProduct.all
+    render json: @carted_products.as_json
+  end
+
   def create
     @carted_product = CartedProduct.new(
       user_id: params[:user_id],
