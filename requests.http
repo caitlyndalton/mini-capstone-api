@@ -16,7 +16,7 @@ Authorization: Bearer {{jwt}}
 }
 
 ### Products show
-GET http://localhost:3000/products/1.json
+GET http://localhost:3000/products/2.json
 
 ### Products update
 PATCH http://localhost:3000/products/2.json
@@ -58,8 +58,8 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "product_id": "2",
-  "quantity": "3"
+  "product_id": "4",
+  "quantity": "2"
 }
 
 ### Order Show
@@ -72,6 +72,7 @@ Authorization: Bearer {{jwt}}
 
 ### CartedProduct Index
 GET http://localhost:3000/carted_products.json
+Authorization: Bearer {{jwt}}
 
 ### CartedProduct Create
 POST http://localhost:3000/carted_products.json
@@ -80,9 +81,10 @@ Authorization: Bearer {{jwt}}
 
 {
   "product_id": "1",
-  "quantity": "10",
+  "quantity": "4",
   "status": "carted"
 }
 
 ### CartedProduct Destroy
-DELETE http://localhost:3000/carted_products/3.json
+DELETE http://localhost:3000/carted_products/7.json
+Authorization: Bearer {{jwt}}
