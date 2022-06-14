@@ -1,10 +1,11 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTMwMDk2Mjl9.AKhos9TieTs48rnhOf3-hOcnUgnn6_cfZEMPrjyUdKY
+@host = http://localhost:3000
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTUzMzU2OTl9.cfeW1LU1_VEI9E4HisrUXXQxzUxMMtXDl1fw4b9RLz0
 
 ### Products index
-GET http://localhost:3000/products.json
+GET {{host}}/products.json
 
 ### Products create
-POST http://localhost:3000/products.json
+POST {{host}}/products.json
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
@@ -16,10 +17,10 @@ Authorization: Bearer {{jwt}}
 }
 
 ### Products show
-GET http://localhost:3000/products/2.json
+GET {{host}}/products/6.json
 
 ### Products update
-PATCH http://localhost:3000/products/2.json
+PATCH {{host}}/products/2.json
 Content-Type: application/json
 
 {
@@ -29,11 +30,11 @@ Content-Type: application/json
 }
 
 ### Product destroy
-DELETE http://localhost:3000/products/5.json
+DELETE {{host}}/products/6.json
 Authorization: Bearer {{jwt}}
 
 ### Users create (signup)
-POST http://localhost:3000/users.json
+POST {{host}}/users.json
 Content-Type: application/json
 
 {
@@ -44,7 +45,7 @@ Content-Type: application/json
 }
 
 ### Sessions create (login)
-POST http://localhost:3000/sessions.json
+POST {{host}}/sessions.json
 Content-Type: application/json
 
 {
@@ -53,7 +54,7 @@ Content-Type: application/json
 }
 
 ### Order Create
-POST http://localhost:3000/orders.json 
+POST {{host}}/orders.json 
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
@@ -63,19 +64,19 @@ Authorization: Bearer {{jwt}}
 }
 
 ### Order Show
-GET http://localhost:3000/orders/3.json
+GET {{host}}/orders/12.json
 Authorization: Bearer {{jwt}}
 
 ### Order Index
-GET http://localhost:3000/orders.json
+GET {{host}}/orders.json
 Authorization: Bearer {{jwt}}
 
 ### CartedProduct Index
-GET http://localhost:3000/carted_products.json
+GET {{host}}/carted_products.json
 Authorization: Bearer {{jwt}}
 
 ### CartedProduct Create
-POST http://localhost:3000/carted_products.json
+POST {{host}}/carted_products.json
 Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
@@ -86,5 +87,5 @@ Authorization: Bearer {{jwt}}
 }
 
 ### CartedProduct Destroy
-DELETE http://localhost:3000/carted_products/7.json
+DELETE {{host}}/carted_products/7.json
 Authorization: Bearer {{jwt}}
